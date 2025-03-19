@@ -7,12 +7,11 @@
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-
-        <div class="side-bar close">
+        <div id="side-bar" class="side-bar">
             <a href="" class="logo">
                 <i class='bx bxl-meta'></i>
                 <div class="logo-name">
@@ -23,7 +22,7 @@
                 <li>
                     <a href="#"><i class='bx bxs-dashboard'></i>Dash-board</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="#"><i class='bx bx-store-alt' ></i>Shop</a>
                 </li>
                 <li>
@@ -49,7 +48,7 @@
         </div>
         <div class="content">
             <nav>
-                <i class='bx bx-menu'></i>
+                <i onclick="OpenClose()" class='bx bx-menu'></i>
                 <form action="#">
                     <div class="form-input">
                         <input type="search" placeholder="Search..">

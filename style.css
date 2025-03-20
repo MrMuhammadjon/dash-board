@@ -23,6 +23,7 @@ li {
     --light-warning: #FFF2C6;
     --success: #388E3c;
     --light-success: #BBF7D0;
+    --baclck-1: #171717;
 }
 
 
@@ -34,6 +35,11 @@ body {
     background-color: var(--gray);
     overflow-x: hidden;
 }
+
+body.dark{
+    background-color: #1b1b1b;
+}
+
 
 .side-bar {
     position: fixed;
@@ -48,6 +54,12 @@ body {
     transition: 0.3s ease;
     padding: 0px 10px;
 }
+
+.side-bar.dark{
+    background-color: #171717;
+}
+
+
 
 .side-bar ul {
     display: flex;
@@ -167,16 +179,14 @@ body {
     z-index: 1000;
 }
 
-.content nav::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    bottom: -50px;
-    left: 0;
-    border-radius: 50%;
-    box-shadow: -20px -20px 0 var(--light);
+.content.dark{
+    background-color: #1b1b1b;
 }
+
+.content nav.dark{
+    background-color: #171717;
+}
+
 
 .content nav a {
     color: var(--dark);

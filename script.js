@@ -29,3 +29,12 @@ slideList.forEach(item => {
 
 
 let togger = document.getElementById('theme-toogle')
+let nav = document.querySelector('.content nav')
+let contenr = document.querySelector('body')
+
+
+function DarkMod() {
+    sideBar.classList.toggle('dark')
+    nav.classList.toggle('dark')
+    contenr.classList.toggle('dark')
+}
